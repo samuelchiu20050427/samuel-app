@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/fbd-all.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/findData.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+	<title></title>
+</head>
+<body>
+	
+	
+	<div class="container main">
+        <div class="row ">
+                <div class="col-md-6">
+                        <h1 class="title">支出查詢</h1>
+                    <p> from:</p>
+                    <input type="date" class = "from">
+                    <br>    
+                    <p> to:</p>
+                    <input type="date" class = "to">
+                    <p class="btn btn-success" id="search">search</p>
+                </div>
+                <div class="col-md-3">
+                        <p class="btn btn-success" id="this-month">this month</p>
+                </div>
+        </div>
+        <div class="row"  >
+            <table class="table table-bordered " >
+                <thead>
+                    <tr>
+                        <td>#</td>
+                        <td class="sel">類別</td>
+                        <td class="money">金額</td>
+                        <td class="percent">比例</td>                          
+                    </tr>
+                </thead>
+                <tbody id="otherTbody">
+                    
+                </tbody>
+            </table>
+        </div>
+        <div class="row">
+                    <table class="table table-bordered " >
+                <thead>
+                    <tr>
+                        <td>#</td>
+                        <td class="date">日期</td>
+                        <td class="kind">種類</td>
+                        <td class="money">金額</td>
+                        <td class="words">備註</td>                          
+                    </tr>
+                </thead>
+                <tbody id="myTbody">
+                    
+                </tbody>
+            </table>
+
+
+        </div>
+    </div>
+    <script type="text/javascript" src="js/findData.js"></script>
+</body>
+</html>

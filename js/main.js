@@ -12,20 +12,22 @@ var Collection = myDb.collection('Collection');
 Collection.load(show);
 
 function myfunction(){
-
+	if( $(".money").val() == ''){
+		alert(" invalid input!");
+		return ;
+	}
 	Collection.insert({
-		text:$("#my-select").val(),
+		sel:$("#my-select").val(),
 		date:$(".date").val(),
 		kind: $(".kind").val(),
 		money: $(".money").val(),
 		words:$(".words").val()
-
 	})
 	Collection.save();
-	$("#my-select").val(""),
+	$(".sel").val(""),
 	$(".date").val(""),
 	$(".kind").val(""),
 	$(".money").val(""),
 	$(".words").val("")
 }
-$("#submit").on("click",myfunction	);
+$("#submit").on("click",myfunction);

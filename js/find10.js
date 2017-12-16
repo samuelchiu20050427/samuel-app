@@ -1,7 +1,7 @@
-
-	
 function show(){
-	var data = Collection.find({},{
+	$("#myTbody").text("");
+	var data = Collection.find({
+	},{
 		$orderBy:{date:-1},
 		$limit:10
 	});
@@ -18,11 +18,6 @@ function show(){
 			"</tr>"
 		)
 	}
-	
-
-
-
-	
 }
 
 
